@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script src="https://kit.fontawesome.com/b7319462f9.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>AstroX | Explore the Stars</title>
+  </head>
+
+  <body id="welcome">
+    <!-- Navbar -->
+    <nav id="navbar">
+      <h1 class="logo">
+        <i class="fas fa-user-astronaut"></i>
+        Astro<span class="text-primary">X</span>
+      </h1>
+      <ul>
+        <li><a href="#home">Welcome</a></li>
+        <li><a href="#company">Company</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#partners">Partners</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="l-heading">
+          Get Lost In <span class="text-primary">Space</span>
+        </h1>
+        <p class="lead">
+          The world's first outer space travel company. Experience firsthand
+          what it feels like to be an astronaut.
+        </p>
+        <a class="btn" href="#">Discover</a>
+      </div>
+    </header>
+
+    <!-- Section: Company -->
+    <section id="company" class="bg-light py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          About our <span class="text-primary">Company</span>
+        </h2>
+        <div class="items">
+          <div class="item bg-light">
+            <i class="fas fa-space-shuttle fa-2x"></i>
+            <div>
+              <h3>Monthly Space Travel</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem, voluptatem veritatis sed enim et officia rem. Nisi
+                temporibus quisquam modi!
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-globe-americas fa-2x"></i>
+            <div>
+              <h3>Best views guaranteed</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur blanditiis repellendus obcaecati dicta adipisci
+                quis!
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-user-astronaut fa-2x"></i>
+            <div>
+              <h3>Astronaut Training/Internships</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                accusantium laudantium beatae quo deserunt nesciunt, dolor
+                repudiandae eveniet cum numquam consequuntur vero tempora,
+                voluptates sapiente amet suscipit dolorem. Molestiae, dolores.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Vision -->
+
+    <section id="vision">
+      <div class="vision-img"></div>
+      <div class="vision-text p-2">
+        <h2 class="m-heading">Our <span class="text-primary">Vision</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quos
+          sunt neque itaque, rerum reprehenderit impedit temporibus, amet
+          quisquam aliquid doloremque atque fuga! Nisi minus perspiciatis
+          commodi provident, minima at.
+        </p>
+        <h3>Our Mission</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat in
+          repudiandae assumenda modi temporibus alias hic cupiditate! Eius,
+          commodi aliquam.
+        </p>
+      </div>
+    </section>
+
+    <section id="partners" class="py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          <span class="text-primary">Our Partners</span>
+        </h2>
+        <div class="items py-1">
+          <div>
+            <img class="boeing" src="img/logo1.png" alt="Partner 1" />
+          </div>
+          <div>
+            <img class="origin" src="img/logo2.png" alt="Partner 2" />
+          </div>
+          <div>
+            <img class="nasa" src="img/logo3.png" alt="Partner 3" />
+          </div>
+          <div>
+            <img class="spacex" src="img/logo4.png" alt="Partner 4" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-container">
+      <h1 class="overlay">Astro<span class="text-primary">X</span></h1>
+      <video autoplay muted loop>
+        <source src="img/Orbit.mp4" type=video/mp4> Your browser is not
+        supported.
+      </video>
+    </section>
+    <footer id="footer">
+      <p>AstroX &copy; All Rights Reserved</p>
+      <p>Designed & coded by Kelvin Brito</p>
+      <ul>
+        <li>
+          <a class="foot-i" href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a class="foot-i" href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a class="foot-i" href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a class="foot-i" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- TECHSCROLL JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      ScrollReveal().reveal(".showcase-content", {
+        duration: 2000,
+        origin: "bottom",
+        delay: 500
+      });
+
+      ScrollReveal().reveal("#company .container", {
+        duration: 2000,
+        origin: "bottom",
+        delay: 1000
+      });
+
+      ScrollReveal().reveal(".vision-text", {
+        duration: 2000,
+        origin: "bottom",
+        delay: 500
+      });
+
+      ScrollReveal().reveal("#partners .container .items", {
+        duration: 2000,
+        origin: "bottom",
+        delay: 1000
+      });
+
+      ScrollReveal().reveal(".overlay", {
+        duration: 2000,
+        origin: "bottom",
+        delay: 500
+      });
+    </script>
+  </body>
+</html>
