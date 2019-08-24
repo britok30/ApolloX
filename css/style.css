@@ -16,28 +16,23 @@ body {
     line-height: 1.4;
 }
 
-a {
-    text-decoration: none;
-}
-
 p {
-    margin: 0.75rem 0;
+    margin: .75rem;
     font-weight: 300;
 }
 
-/* Utility Classes */
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 2rem;
-    overflow: hidden;
-}
-
 section {
-    margin: 6rem;
+    margin: 5rem;
 }
 
-.text-primary {
+.btn {
+    margin: .50rem;
+}
+
+/* Utility Classes */
+
+
+.text-prime {
     color: #e9c888;
 }
 
@@ -46,7 +41,7 @@ section {
 }
 
 .l-heading {
-    font-size: 4rem;
+    font-size: 7rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
     font-weight: 300;
@@ -54,97 +49,27 @@ section {
 
 .m-heading {
     margin: 1.3rem 0;
-    font-size: 2rem;
+    font-size: 3.5rem;
     line-height: 1.1;
     font-weight: 100;
+    padding-top: 4rem;
 }
 
-h3 {
+.s-heading {
     font-weight: 100;
+    font-size: 2rem;
 }
 
 .lead {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin: 2rem;
 }
 
-.py-1 {
-    padding: 1.5rem 0;
-}
+/* Navbar */
 
-.py-2 {
-    padding: 2rem 0;
-}
+.navbar-brand {
+    font-size: 2.2rem;
 
-.py-3 {
-    padding: 3rem 0;
-}
-
-.p-1 {
-    padding: 1.5rem;
-}
-
-.p-2 {
-    padding: 2rem;
-}
-
-.p-3 {
-    padding: 3rem;
-}
-
-.btn {
-    display: inline-block;
-    color: #fff;
-    background: transparent;
-    padding: 0.5rem 2rem;
-    border: solid 1px;
-    border-radius: 5px;
-    transition: all 0.4s;
-}
-
-.btn:hover {
-    background: #e9c888;
-    color: #fff;
-}
-
-.btn-dark {
-    background: #333;
-    color: #fff;
-}
-
-/* Navbar  */
-
-#navbar {
-    display: flex;
-    color: #333;
-    top: 0;
-    justify-content: space-between;
-    z-index: 1;
-    padding: 1rem;
-}
-
-#navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-#navbar ul li a {
-    color: #333;
-    padding: 0.75rem;
-    margin: 0 0.25rem;
-    transition: all 0.4s;
-}
-
-#navbar ul li a:hover {
-    background: #e9c888;
-    border-radius: 5px;
-    color: #fff;
-}
-
-#navbar,
-#navbar h1 {
-    font-weight: 300;
 }
 
 /* Showcase  */
@@ -158,19 +83,27 @@ h3 {
     border-radius: 3rem;
 }
 
-#showcase .showcase-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0 2rem;
+#showcase {
+
+    padding-top: 13rem;
+    margin: auto;
 }
 
-#showcase .showcase-content h1 {
+#showcase .l-heading {
     text-transform: uppercase;
+    text-align: center;
 }
+
+#showcase .lead {
+    text-align: center;
+}
+
+#showcase .btn {
+    margin: auto;
+}
+
+
+
 
 /* Section: Company  */
 
@@ -179,113 +112,64 @@ h3 {
         url(../img/astro.jpg) no-repeat center center/cover;
     color: #fff;
     border-radius: 3rem;
-}
-
-#company .items {
-    display: flex;
-    padding: 1rem;
-}
-
-#company .items .item {
-    flex: 1;
+    height: 75vh;
     text-align: center;
-    padding: 1rem;
 }
 
-#company .items .item i {
-    background: #e9c888;
-    padding: 1rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+#company .m-heading {
+    margin-bottom: 5rem;
 }
+
+
 
 /* Section Vision  */
+
+
 #vision {
-    display: flex;
-}
-
-#vision div {
-    flex: 1;
-    height: 25rem;
-}
-
-#vision .vision-img {
     background: linear-gradient(rgba(243, 145, 79, 0.63), rgba(59, 67, 113, 0.63)),
         url(../img/spacex2.jpg);
     background-size: cover;
     border-radius: 3rem;
+    height: 60vh;
 }
 
-#vision .vision-text {
+#vision .container {
     text-align: center;
+    color: #fff;
     padding-top: 5rem;
 }
 
-/* Section Partners */
-
-#partners {
-    background: linear-gradient(rgba(243, 145, 79, 0.63), rgba(59, 67, 113, 0.63)),
-        url(../img/spacex.jpg) no-repeat center center/cover;
-    height: 90vh;
-    position: relative;
-    border-radius: 3rem;
+/* Section Uber */
+#app h2,
+#app p,
+#app .row {
+    text-align: center;
 }
 
-#partners .nasa,
-#partners .spacex,
-#partners .origin,
-#partners .boeing {
-    position: absolute;
-    max-width: 14%;
+#app p {
+    padding-bottom: 5rem;
 }
 
-#partners .nasa {
-    top: 40%;
-    left: 10%;
-}
-
-#partners .spacex {
-    top: 50%;
-    left: 53%;
-}
-
-#partners .origin {
-    top: 50%;
-    left: 30%;
-}
-
-#partners .boeing {
-    top: 40%;
-    left: 75%;
-}
-
-/* Section Video */
-
-.video-container {
-    position: relative;
-    z-index: 0;
-}
-
-.overlay {
-    color: #fff;
-    position: absolute;
-    top: 43%;
-    left: 44%;
-    z-index: 1;
-    font-weight: 100;
-    font-size: 4rem;
-    margin: auto;
-}
-
-.video-container video {
+#app img {
     width: 80%;
-    margin-left: 7.7rem;
+    transition: all .3s;
     border-radius: 3rem;
 }
 
-.video-container video source {
+#app img:hover {
+    transform: scale(1.1)
+}
+
+
+/* Section Location */
+#location {
+    text-align: center;
+}
+
+#map {
     width: 100%;
-    height: auto;
+    height: 80vh;
+    border-radius: 3rem;
 }
 
 
@@ -293,15 +177,17 @@ h3 {
 
 #footer {
     padding: 4rem 0;
-}
-
-#footer p {
     text-align: center;
 }
+
+#footer .l-heading {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+}
+
 
 #footer ul {
     list-style: none;
-    text-align: center;
 }
 
 #footer ul li {
@@ -336,223 +222,103 @@ h3 {
 
 /* MEDIA QUERIES  */
 
-/*Smart Phones */
+/* Iphone X Phones  */
 
-@media (max-width:500px) {
+@media (min-width:350px) and (max-width:499px) {
 
-    /* NAVBAR */
+    /* UTILITIES */
 
-    #navbar {
+    .l-heading {
+        font-size: 1.6rem;
+
+    }
+
+    .m-heading {
+        font-size: 1.1rem;
+    }
+
+    .s-heading {
         font-size: .8rem;
+    }
+
+    p {
+        font-size: .5rem;
     }
 
     /* SHOWCASE  */
 
-    #showcase .showcase-content h1 {
-        text-transform: uppercase;
-        font-size: 3rem;
+    #showcase {
+        height: 80vh;
     }
 
-    #showcase .showcase-content .lead {
-        font-size: .75rem;
+    #showcase .btn {
+        font-size: 1rem;
     }
 
-    /* COMPANY SECTION */
-
-    #company .items {
-        display: block;
-        padding: 1rem;
+    #showcase .lead {
+        font-size: 1rem;
     }
 
 
-    /* VISION SECTION */
+    /* COMPANY */
 
-    #vision {
-        display: block;
-        font-size: .75rem
+    #company {
+        height: 80vh;
+        display: inline-block;
     }
 
-    #vision .vision-img {
-        background-size: cover;
-        background-attachment: scroll;
+    #company {
+        font-size: .5rem;
+        width: 50%;
     }
 
+    /* LOCATION  */
 
-    /* PARTNERS SECTION */
-
-    #partners {
-        background: url(../img/spacex3.jpg) no-repeat center center/cover;
-        height: 90vh;
-        position: relative;
-    }
-
-    #partners .nasa,
-    #partners .spacex,
-    #partners .origin,
-    #partners .boeing {
-        position: absolute;
-        max-width: 30%;
-    }
-
-    #partners .nasa {
-        top: 20%;
-        left: 40%;
-    }
-
-    #partners .spacex {
-        top: 45%;
-        left: 40%;
-    }
-
-    #partners .origin {
-        top: 60%;
-        left: 38%;
-    }
-
-    #partners .boeing {
-        top: 70%;
-        left: 38%;
+    #map {
+        width: 9rem;
+        height: 10rem;
     }
 
 
-    /* VIDEO SECTION  */
-
-    .video-container video {
-        width: 70%;
-        margin-left: 5rem;
-    }
-
-    .overlay {
-        color: #fff;
-        position: absolute;
-        top: 43%;
-        left: 44%;
-        z-index: 1;
-        font-weight: 100;
-        font-size: 1.3rem;
-        margin: auto;
-    }
 
 }
+
+/*Smart Phones */
+
+@media (max-width:500px) {}
 
 
 /* Tablets  */
 
 @media (min-width: 501px) and (max-width: 768px) {
 
-    /* VISION SECTION */
-
-    #vision {
-        display: block;
-        font-size: .75rem
-    }
-
-    #vision .vision-img {
-        background-size: cover;
-        background-attachment: scroll;
-    }
-
-
-    /* PARTNERS SECTION */
-
-    #partners {
-        background: url(../img/spacex3.jpg) no-repeat center center/cover;
-        height: 90vh;
-        position: relative;
-    }
-
-    #partners .nasa,
-    #partners .spacex,
-    #partners .origin,
-    #partners .boeing {
-        position: absolute;
-        max-width: 25%;
-    }
-
-    #partners .nasa {
-        top: 20%;
-        left: 38%;
-    }
-
-    #partners .spacex {
-        top: 45%;
-        left: 40%;
-    }
-
-    #partners .origin {
-        top: 60%;
-        left: 38%;
-    }
-
-    #partners .boeing {
-        top: 70%;
-        left: 38%;
-    }
-
-
-
-    /* VIDEO SECTION */
-
-    .video-container video {
-        width: 75%;
-        margin-left: 6.3rem;
-    }
-
-    .overlay {
-        color: #fff;
-        position: absolute;
-        top: 43%;
-        left: 42%;
-        z-index: 1;
-        font-weight: 100;
-        font-size: 2.5rem;
-        margin: auto;
-    }
-
-}
-
-
-/* Widescreen */
-
-@media (min-width: 1800px) {
-
-    /* UTILITIES  */
-
-    .l-heading {
-        font-size: 6rem;
-    }
-
-    .m-heading {
-        font-size: 3.5rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    /* NAVBAR  */
-
-    #navbar {
+    .s-heading {
         font-size: 1.5rem;
     }
 
 
+    /* COMPANY  */
 
-    /* VIDEO SECTION  */
-
-    .video-container video {
-        width: 90%;
-        margin-left: 5.8rem;
-    }
-
-    .overlay {
-        color: #fff;
-        position: absolute;
-        top: 43%;
-        left: 44%;
-        z-index: 1;
-        font-weight: 100;
-        font-size: 5.5rem;
-        margin: auto;
+    #company .col-md-4 {
+        display: inline-block;
+        min-width: 100%
     }
 }
+
+
+/* Ipad Pro */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* COMPANY  */
+
+    #company .col-md-4 {
+        display: inline-block;
+        min-width: 100%
+    }
+
+}
+
+
+/* DESKTOP */
+@media (min-width: 1024px) and (max-width: 1200px) {}
