@@ -69,13 +69,14 @@ section {
 
 .navbar-brand {
     font-size: 2.2rem;
+    font-weight: 300;
 
 }
 
 /* Showcase  */
 
 #showcase {
-    background: linear-gradient(rgba(243, 145, 79, 0.63), rgba(59, 67, 113, 0.63)),
+    background: linear-gradient(rgba(11, 72, 107, 0.61), rgba(245, 97, 23, 0.61)),
         url(../img/showcase.jpg) no-repeat center center/cover;
     height: 100vh;
     color: #fff;
@@ -108,7 +109,7 @@ section {
 /* Section: Company  */
 
 #company {
-    background: linear-gradient(rgba(243, 145, 79, 0.63), rgba(59, 67, 113, 0.63)),
+    background: linear-gradient(rgba(11, 72, 107, 0.61), rgba(245, 97, 23, 0.61)),
         url(../img/astro.jpg) no-repeat center center/cover;
     color: #fff;
     border-radius: 3rem;
@@ -126,7 +127,7 @@ section {
 
 
 #vision {
-    background: linear-gradient(rgba(243, 145, 79, 0.63), rgba(59, 67, 113, 0.63)),
+    background: linear-gradient(rgba(11, 72, 107, 0.61), rgba(245, 97, 23, 0.61)),
         url(../img/spacex2.jpg);
     background-size: cover;
     border-radius: 3rem;
