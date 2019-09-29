@@ -1,335 +1,320 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap");
 
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 html {
-    scroll-behavior: smooth;
-    padding: 2rem;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    line-height: 1.4;
+  font-family: "Lato", sans-serif;
+  line-height: 1.4;
+}
+
+.site-wrapper {
+  overflow: hidden;
 }
 
 p {
-    margin: .75rem;
-    font-weight: 300;
+  margin: 0.75rem;
+  font-weight: 300;
 }
 
 section {
-    margin: 5rem;
+  margin: 5rem;
 }
 
 .btn {
-    margin: .50rem;
+  margin: 0.5rem;
 }
 
 /* Utility Classes */
 
-
 .text-prime {
-    color: #e9c888;
+  color: #e9c888;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .l-heading {
-    font-size: 7rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-    font-weight: 300;
+  font-size: 7rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  font-weight: 300;
 }
 
 .m-heading {
-    margin: 1.3rem 0;
-    font-size: 3.5rem;
-    line-height: 1.1;
-    font-weight: 100;
-    padding-top: 4rem;
+  margin: 1.3rem 0;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 100;
+  padding-top: 4rem;
 }
 
 .s-heading {
-    font-weight: 100;
-    font-size: 2rem;
+  font-weight: 100;
+  font-size: 2rem;
 }
 
 .lead {
-    font-size: 1.2rem;
-    margin: 2rem;
+  font-size: 1.2rem;
+  margin: 2rem;
 }
 
 /* Navbar */
 
 .navbar-brand {
-    font-size: 2.2rem;
-    font-weight: 300;
-
+  font-size: 2.2rem;
+  font-weight: 300;
 }
 
 /* Showcase  */
 
 #showcase {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 72, 107, 0.61)), to(rgba(245, 97, 23, 0.61))),
-        url(../img/showcase.jpg) no-repeat center center/cover;
-    background: linear-gradient(rgba(11, 72, 107, 0.61), rgba(245, 97, 23, 0.61)),
-        url(../img/showcase.jpg) no-repeat center center/cover;
-    height: 100vh;
-    color: #fff;
-    background-attachment: fixed;
-    border-radius: 3rem;
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.486),
+      rgba(0, 0, 0, 0.568)
+    ),
+    url(../img/show.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
 }
 
 #showcase {
-
-    padding-top: 13rem;
-    margin: auto;
+  padding-top: 13rem;
+  margin: auto;
 }
 
 #showcase .l-heading {
-    text-transform: uppercase;
-    text-align: center;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 #showcase .lead {
-    text-align: center;
+  text-align: center;
 }
 
 #showcase .btn {
-    margin: auto;
+  margin: auto;
 }
-
-
-
 
 /* Section: Company  */
 
 #company {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 72, 107, 0.61)), to(rgba(245, 97, 23, 0.61))),
-        url(../img/astro.jpg) no-repeat center center/cover;
-    background: linear-gradient(rgba(11, 72, 107, 0.61), rgba(245, 97, 23, 0.61)),
-        url(../img/astro.jpg) no-repeat center center/cover;
-    color: #fff;
-    border-radius: 3rem;
-    height: 75vh;
-    text-align: center;
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.432),
+      rgba(0, 0, 0, 0.568)
+    ),
+    url(../img/astro.jpg) no-repeat center center/cover;
+  color: #fff;
+  border-radius: 3rem;
+  height: 75vh;
+  text-align: center;
 }
 
 #company .m-heading {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
-
-
 
 /* Section Vision  */
 
-
 #vision {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 72, 107, 0.61)), to(rgba(245, 97, 23, 0.61))),
-        url(../img/spacex2.jpg);
-    background: linear-gradient(rgba(11, 72, 107, 0.61), rgba(245, 97, 23, 0.61)),
-        url(../img/spacex2.jpg);
-    background-size: cover;
-    border-radius: 3rem;
-    height: 60vh;
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.432),
+      rgba(0, 0, 0, 0.568)
+    ),
+    url(../img/spacex2.jpg);
+  background-size: cover;
+  border-radius: 3rem;
+  height: 60vh;
 }
 
 #vision .container {
-    text-align: center;
-    color: #fff;
-    padding-top: 5rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 5rem;
 }
 
 /* Section Uber */
 #app h2,
 #app p,
 #app .row {
-    text-align: center;
+  text-align: center;
 }
 
 #app p {
-    padding-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 #app img {
-    width: 80%;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    border-radius: 3rem;
+  width: 80%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 3rem;
 }
 
 #app img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1)
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 
 /* Section Location */
 #location {
-    text-align: center;
+  text-align: center;
 }
 
 #map {
-    width: 100%;
-    height: 80vh;
-    border-radius: 3rem;
+  width: 100%;
+  height: 80vh;
+  border-radius: 3rem;
 }
-
 
 /* Section footer */
 
 #footer {
-    padding: 4rem 0;
-    text-align: center;
+  padding: 4rem 0;
+  text-align: center;
 }
 
 #footer .l-heading {
-    font-size: 4rem;
-    padding-bottom: 3rem;
+  font-size: 4rem;
+  padding-bottom: 3rem;
 }
 
-
 #footer ul {
-    list-style: none;
+  list-style: none;
 }
 
 #footer ul li {
-    display: inline;
-    padding: .75rem;
+  display: inline;
+  padding: 0.75rem;
 }
 
 #footer .foot-i {
-    color: #333;
-    -webkit-transition: all .4s;
-    transition: all .4s;
+  color: #333;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 #footer .foot-i:hover {
-    color: #e9c888;
+  color: #e9c888;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* MEDIA QUERIES  */
 
 /* Iphone X Phones  */
 
-@media (min-width:350px) and (max-width:499px) {
+@media (min-width: 350px) and (max-width: 499px) {
+  /* UTILITIES */
 
-    /* UTILITIES */
+  .l-heading {
+    font-size: 1.6rem;
+  }
 
-    .l-heading {
-        font-size: 1.6rem;
+  .m-heading {
+    font-size: 1.1rem;
+  }
 
-    }
+  .s-heading {
+    font-size: 0.8rem;
+  }
 
-    .m-heading {
-        font-size: 1.1rem;
-    }
+  p {
+    font-size: 0.5rem;
+  }
 
-    .s-heading {
-        font-size: .8rem;
-    }
+  /* SHOWCASE  */
 
-    p {
-        font-size: .5rem;
-    }
+  #showcase {
+    height: 80vh;
+  }
 
-    /* SHOWCASE  */
+  #showcase .btn {
+    font-size: 1rem;
+  }
 
-    #showcase {
-        height: 80vh;
-    }
+  #showcase .lead {
+    font-size: 1rem;
+  }
 
-    #showcase .btn {
-        font-size: 1rem;
-    }
+  /* COMPANY */
 
-    #showcase .lead {
-        font-size: 1rem;
-    }
+  #company {
+    height: 80vh;
+    display: inline-block;
+  }
 
+  #company {
+    font-size: 0.5rem;
+    width: 50%;
+  }
 
-    /* COMPANY */
+  /* LOCATION  */
 
-    #company {
-        height: 80vh;
-        display: inline-block;
-    }
-
-    #company {
-        font-size: .5rem;
-        width: 50%;
-    }
-
-    /* LOCATION  */
-
-    #map {
-        width: 9rem;
-        height: 10rem;
-    }
-
-
-
+  #map {
+    width: 9rem;
+    height: 10rem;
+  }
 }
 
 /*Smart Phones */
 
-@media (max-width:500px) {}
-
+@media (max-width: 500px) {
+  .site-wrapper {
+    overflow: hidden;
+  }
+}
 
 /* Tablets  */
 
 @media (min-width: 501px) and (max-width: 768px) {
+  .site-wrapper {
+    overflow: hidden;
+  }
 
-    .s-heading {
-        font-size: 1.5rem;
-    }
+  .s-heading {
+    font-size: 1.5rem;
+  }
 
+  /* COMPANY  */
 
-    /* COMPANY  */
-
-    #company .col-md-4 {
-        display: inline-block;
-        min-width: 100%
-    }
+  #company .col-md-4 {
+    display: inline-block;
+    min-width: 100%;
+  }
 }
-
 
 /* Ipad Pro */
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .site-wrapper {
+    overflow: hidden;
+  }
 
-    /* COMPANY  */
+  /* COMPANY  */
 
-    #company .col-md-4 {
-        display: inline-block;
-        min-width: 100%
-    }
-
+  #company .col-md-4 {
+    display: inline-block;
+    min-width: 100%;
+  }
 }
 
-
 /* DESKTOP */
-@media (min-width: 1024px) and (max-width: 1200px) {}
+@media (min-width: 1024px) and (max-width: 1200px) {
+}

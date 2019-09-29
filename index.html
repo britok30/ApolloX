@@ -1,254 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="The world's leading space travel company"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="The world's leading space travel company">
+    <script src="https://kit.fontawesome.com/b7319462f9.js"></script>
 
-  <script src="https://kit.fontawesome.com/b7319462f9.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
-  <script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="css/style.css" />
+    <title>ApolloX | Explore the Stars</title>
+  </head>
 
-  <title>ApolloX | Explore the Stars</title>
-</head>
-
-<body>
-
-  <!-- Navbar -->
-  <nav id="navbar">
-    <div class="container-fluid">
-      <div class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">Apollo<span class="text-prime">X</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#company">Company</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#vision">Vision</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#app">App Store</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#location">Location</a>
-            </li>
-          </ul>
+  <body>
+    <div class="site-wrapper">
+      <!-- Navbar -->
+      <nav id="navbar">
+        <div class="container-fluid">
+          <div class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"
+              >Apollo<span class="text-prime">X</span></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#company">Company</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#vision">Vision</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#app">App Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#location">Location</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
 
+      <!-- Header -->
 
-  </nav>
-
-
-  <!-- Header -->
-
-  <section id="showcase">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="l-heading">Explore the <span class="text-prime">Universe</span></h1>
-          <p class="lead">
-            The world's first outer space travel company. Experience firsthand
-            what it feels like to be an astronaut.
-          </p>
+      <section id="showcase">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="l-heading">
+                Explore the <span class="text-prime">Universe</span>
+              </h1>
+              <p class="lead">
+                The world's first outer space travel company. Experience
+                firsthand what it feels like to be an astronaut.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <a class="btn btn-outline-light btn-lg" href="#">Discover</a>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <a class="btn btn-outline-light btn-lg" href="#">Discover</a>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Section: Company -->
+      <!-- Section: Company -->
 
-  <section id="company">
-    <div class="container">
-      <div class="row">
-        <div class="col -md-12">
-          <h2 class="m-heading text-center">
-            About our <span class="text-prime">Company</span>
-          </h2>
+      <section id="company">
+        <div class="container">
+          <div class="row">
+            <div class="col -md-12">
+              <h2 class="m-heading text-center">
+                About our <span class="text-prime">Company</span>
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <i class="fas fa-space-shuttle fa-2x"></i>
+              <h3 class="s-heading">Monthly Space Travel</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+                ea consequatur dolor culpa voluptate ipsa molestiae quia omnis.
+                Nostrum, harum!
+              </p>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-globe-americas fa-2x"></i>
+              <h3 class="s-heading">Best views guaranteed</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                quasi culpa asperiores ea reiciendis dolores repudiandae, cumque
+                unde. Illum, mollitia.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-user-astronaut fa-2x"></i>
+              <h3 class="s-heading">Astronaut Training/Internships</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+                ullam dolor corporis non suscipit sed delectus ipsum temporibus
+                deserunt id
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <i class="fas fa-space-shuttle fa-2x"></i>
-          <h3 class="s-heading">Monthly Space Travel</h3>
+      </section>
+
+      <!-- Section Vision -->
+
+      <section id="vision">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="m-heading">
+                Our <span class="text-prime">Vision</span>
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                quos sunt neque itaque, rerum reprehenderit impedit temporibus,
+                amet quisquam aliquid doloremque atque fuga! Nisi minus
+                perspiciatis commodi provident, minima at. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="app">
+        <div class="container">
+          <h2 class="m-heading">Apple Store & Google Play</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ea consequatur dolor culpa voluptate ipsa
-            molestiae quia omnis. Nostrum, harum!
+            ApolloX is a proud partner of Uber, NASA, & SpaceX. Check out our
+            app for upcoming launchs
           </p>
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="img/SU1.png" alt="Uber1" />
+            </div>
+            <div class="col-sm-4">
+              <img src="img/SU2.png" alt="Uber2" />
+            </div>
+            <div class="col-sm-4">
+              <img src="img/SU3.png" alt="Uber3" />
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <i class="fas fa-globe-americas fa-2x"></i>
-          <h3 class="s-heading">Best views guaranteed</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quasi culpa asperiores ea reiciendis dolores
-            repudiandae, cumque unde. Illum, mollitia.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <i class="fas fa-user-astronaut fa-2x"></i>
-          <h3 class="s-heading">Astronaut Training/Internships</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ullam dolor corporis non suscipit sed
-            delectus ipsum temporibus deserunt id
-          </p>
-        </div>
-      </div>
+      </section>
+
+      <!-- Section Map -->
+
+      <section id="location">
+        <h2 class="m-heading">Location</h2>
+        <p>We are based in San Francisco, CA.</p>
+        <div id="map"></div>
+        <script>
+          mapboxgl.accessToken =
+            "pk.eyJ1IjoiYnJpdG9rMzAiLCJhIjoiY2p6bzR6OGVnMGFwOTNjbWtuamtqdDV0ZSJ9.qnR97mJrARa-GpriDvmJZA";
+          var map = new mapboxgl.Map({
+            container: "map",
+            style: "mapbox://styles/mapbox/dark-v9",
+            center: [-122.4194, 37.7749],
+            zoom: 13
+          });
+
+          new mapboxgl.Marker().setLngLat([-122.4194, 37.7749]).addTo(map);
+        </script>
+      </section>
+
+      <footer id="footer">
+        <h1 class="l-heading">Apollo<span class="text-prime">X</span></h1>
+        <p>ApolloX &copy; All Rights Reserved</p>
+        <p>Designed & coded by Kelvin Brito</p>
+        <p>
+          Credit to Moe S. for Uber Space Photos |
+          <a href="https://www.behance.net/moesalah">Moe Salah</a>
+        </p>
+        <ul>
+          <li>
+            <a class="foot-i" href="#"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </li>
+          <li>
+            <a class="foot-i" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a class="foot-i" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a class="foot-i" href="#"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </footer>
     </div>
-  </section>
 
-  <!-- Section Vision -->
+    <!-- TECHSCROLL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <section id="vision">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="m-heading">Our <span class="text-prime">Vision</span></h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quos
-            sunt neque itaque, rerum reprehenderit impedit temporibus, amet
-            quisquam aliquid doloremque atque fuga! Nisi minus perspiciatis
-            commodi provident, minima at. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-      </div>
-    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
 
-  </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-  <section id="app">
-    <div class="container">
-      <h2 class="m-heading">Apple Store & Google Play</h2>
-      <p>ApolloX is a proud partner of Uber, NASA, & SpaceX. Check out our app for upcoming launchs</p>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="img/SU1.png" alt="Uber1">
-        </div>
-        <div class="col-sm-4">
-          <img src="img/SU2.png" alt="Uber2">
-        </div>
-        <div class="col-sm-4">
-          <img src="img/SU3.png" alt="Uber3">
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- Section Map -->
-
-  <section id="location">
-    <h2 class="m-heading">Location</h2>
-    <p>We are based in San Francisco, CA.</p>
-    <div id='map'>
-    </div>
     <script>
-      mapboxgl.accessToken =
-        'pk.eyJ1IjoiYnJpdG9rMzAiLCJhIjoiY2p6bzR6OGVnMGFwOTNjbWtuamtqdDV0ZSJ9.qnR97mJrARa-GpriDvmJZA';
-      var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/dark-v9',
-        center: [-122.4194, 37.7749],
-        zoom: 13
+      ScrollReveal().reveal("#showcase", {
+        duration: 2000,
+        origin: "bottom"
       });
 
-      new mapboxgl.Marker()
-        .setLngLat([-122.4194, 37.7749])
-        .addTo(map);
+      ScrollReveal().reveal("#company", {
+        duration: 2000,
+        origin: "bottom",
+        distance: "30rem"
+      });
+
+      ScrollReveal().reveal("#vision", {
+        duration: 2000,
+        origin: "bottom",
+        distance: "30rem"
+      });
+
+      ScrollReveal().reveal("#app", {
+        duration: 2000,
+        origin: "bottom",
+        distance: "30rem"
+      });
+
+      ScrollReveal().reveal("#location", {
+        duration: 2000,
+        origin: "bottom"
+      });
+
+      ScrollReveal().reveal("#video", {
+        duration: 2000,
+        origin: "bottom"
+      });
     </script>
-
-  </section>
-
-  <footer id="footer">
-    <h1 class="l-heading">Apollo<span class="text-prime">X</span></h1>
-    <p>ApolloX &copy; All Rights Reserved</p>
-    <p>Designed & coded by Kelvin Brito</p>
-    <p>Credit to Moe S. for Uber Space Photos | <a href="https://www.behance.net/moesalah">Moe Salah</a> </p>
-    <ul>
-      <li>
-        <a class="foot-i" href="#"><i class="fab fa-facebook-square"></i></a>
-      </li>
-      <li>
-        <a class="foot-i" href="#"><i class="fab fa-twitter"></i></a>
-      </li>
-      <li>
-        <a class="foot-i" href="#"><i class="fab fa-instagram"></i></a>
-      </li>
-      <li>
-        <a class="foot-i" href="#"><i class="fab fa-linkedin-in"></i></a>
-      </li>
-    </ul>
-  </footer>
-
-  <!-- TECHSCROLL -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-
-  <script>
-    ScrollReveal().reveal("#showcase", {
-      duration: 2000,
-      origin: "bottom"
-    });
-
-    ScrollReveal().reveal("#company", {
-      duration: 2000,
-      origin: "bottom",
-      distance: "30rem"
-    });
-
-    ScrollReveal().reveal("#vision", {
-      duration: 2000,
-      origin: "right",
-      distance: "30rem"
-    });
-
-    ScrollReveal().reveal("#app", {
-      duration: 2000,
-      origin: "bottom",
-      distance: "30rem"
-    });
-
-    ScrollReveal().reveal("#location", {
-      duration: 2000,
-      origin: "bottom"
-    });
-
-    ScrollReveal().reveal("#video", {
-      duration: 2000,
-      origin: "bottom"
-    });
-  </script>
-</body>
-
+  </body>
 </html>
