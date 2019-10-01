@@ -224,19 +224,19 @@ section {
   /* UTILITIES */
 
   .l-heading {
-    font-size: 1.6rem;
+    font-size: 3rem;
   }
 
   .m-heading {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
 
   .s-heading {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   p {
-    font-size: 0.5rem;
+    font-size: .9rem;
   }
 
   /* SHOWCASE  */
