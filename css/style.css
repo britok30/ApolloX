@@ -32,7 +32,7 @@ p {
 }
 
 section {
-  margin: 5rem;
+  margin: 5rem 0;
 }
 
 .btn {
@@ -262,15 +262,8 @@ section {
 
   #company {
     font-size: 0.5rem;
-    width: 50%;
   }
 
-  /* LOCATION  */
-
-  #map {
-    width: 9rem;
-    height: 10rem;
-  }
 }
 
 /*Smart Phones */
